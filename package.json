@@ -1,0 +1,29 @@
+{
+  "name": "orduyasammedikal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "pages:build": "next build",
+    "start": "serve out --config ../serve.json",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@next/third-parties": "^16.3.2",
+    "next": "^16.3.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.2",
+    "serve": "^14.2.6",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.0"
+  }
+}

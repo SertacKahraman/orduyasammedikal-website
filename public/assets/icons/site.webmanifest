@@ -1,0 +1,21 @@
+{
+  "name": "Ordu Yaşam Medikal",
+  "short_name": "Yaşam Medikal",
+  "description": "Ordu Yaşam Medikal ürün ve iletişim sitesi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E8C9B2",
+  "icons": [
+    {
+      "src": "/assets/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
