@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { businessInfo } from "@/data/site";
+import { businessInfo, whatsappHref } from "@/data/site";
 
 type HeroProps = {
   title: string;
@@ -8,8 +8,6 @@ type HeroProps = {
 };
 
 export default function Hero({ title, description }: HeroProps) {
-  const phone = businessInfo.whatsapp.replace(/\D/g, "");
-
   return (
     <section className="relative isolate min-h-[100svh] overflow-hidden bg-[#E8C9B2]">
       <Image
@@ -51,7 +49,9 @@ export default function Hero({ title, description }: HeroProps) {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={`https://wa.me/${phone}`}
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex justify-center rounded-full bg-[#8F4B38] px-6 py-3 text-sm font-semibold text-white shadow-xl shadow-[#8F4B38]/20 transition duration-300 hover:-translate-y-0.5 hover:bg-[#3A2A24] sm:px-7 sm:py-3.5"
             >
               WhatsApp'tan Sipariş Ver

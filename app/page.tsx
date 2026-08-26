@@ -5,8 +5,7 @@ import Hero from "@/components/Hero";
 import JsonLd from "@/components/JsonLd";
 import SectionHeader from "@/components/SectionHeader";
 import ServiceExperience from "@/components/ServiceExperience";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import { businessInfo, faqs } from "@/data/site";
+import { businessInfo, faqs, whatsappHref } from "@/data/site";
 import { generateFAQSchema, generateLocalBusinessSchema } from "@/lib/seo";
 import type { Service } from "@/types";
 
@@ -192,7 +191,9 @@ export default function HomePage() {
                 Hakkımızda
               </Link>
               <a
-                href={`https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`}
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex justify-center rounded-full border border-[#8F4B38]/45 px-7 py-3.5 text-sm font-semibold text-[#4C362E] transition hover:-translate-y-0.5 hover:border-[#8F4B38] hover:text-[#7A3429]"
               >
                 WhatsApp'tan Bilgi Al
@@ -223,7 +224,9 @@ export default function HomePage() {
             </span>
           </h2>
           <a
-            href={`https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`}
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-flex rounded-full bg-[#8D6B47] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#8D6B47]/18 transition hover:-translate-y-0.5 hover:bg-[#6F4D34] sm:mt-10 sm:px-8"
           >
             WhatsApp ile Bilgi Al
@@ -305,7 +308,9 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
                   <a
-                    href={`https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`}
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex justify-center rounded-full bg-[#8F4B38] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#3A2A24]"
                   >
                     WhatsApp'tan Bilgi Al
@@ -324,8 +329,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <WhatsAppButton />
     </>
   );
 }

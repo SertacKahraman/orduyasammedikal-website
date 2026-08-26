@@ -50,6 +50,14 @@ export const businessInfo: BusinessInfo = {
   defaultOgImage,
 };
 
+export const whatsappPhone = "905456871984";
+export const whatsappHref = `https://wa.me/${whatsappPhone}`;
+export function getWhatsAppHref(message?: string): string {
+  return message
+    ? `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(message)}`
+    : whatsappHref;
+}
+
 export const navItems: NavItem[] = [
   { label: "Ana Sayfa", href: "/" },
   { label: "Hakkımızda", href: "/hakkimizda" },

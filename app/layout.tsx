@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import AnalyticsEvents from "@/components/AnalyticsEvents";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { businessInfo, targetKeywords } from "@/data/site";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
@@ -81,6 +82,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
         <GoogleAnalytics gaId="G-SHC156KPGH" />
       </body>
     </html>

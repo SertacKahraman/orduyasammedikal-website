@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQItem from "@/components/FAQItem";
 import JsonLd from "@/components/JsonLd";
-import { blogPosts, businessInfo, services } from "@/data/site";
+import { blogPosts, businessInfo, services, whatsappHref } from "@/data/site";
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
@@ -920,7 +920,6 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   const relatedBlogs = detail.relatedBlogSlugs
     .map((blogSlug) => blogPosts.find((post) => post.slug === blogSlug))
     .filter((post): post is (typeof blogPosts)[number] => Boolean(post));
-  const whatsappHref = `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`;
 
   if (service.slug) {
     return (

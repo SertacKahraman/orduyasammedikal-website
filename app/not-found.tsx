@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { businessInfo } from "@/data/site";
+import { businessInfo, whatsappHref } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Sayfa Bulunamadı",
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 };
 
 export default function NotFound() {
-  const whatsappHref = `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`;
 
   return (
     <section className="flex min-h-[72vh] items-center bg-[#F7EFE6] px-4 pb-20 pt-32 sm:px-6 lg:px-8">

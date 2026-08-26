@@ -1,11 +1,11 @@
-﻿import { businessInfo } from "@/data/site";
+import { whatsappHref } from "@/data/site";
 
 export default function WhatsAppButton() {
-  const phone = businessInfo.whatsapp.replace(/\D/g, "");
-
   return (
     <a
-      href={`https://wa.me/${phone}`}
+      href={whatsappHref}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="WhatsApp'tan ürün bilgisi al"
       className="fixed bottom-4 right-4 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_16px_42px_rgba(37,211,102,0.32)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1DB954] sm:bottom-5 sm:right-5 sm:h-13 sm:w-13"
     >

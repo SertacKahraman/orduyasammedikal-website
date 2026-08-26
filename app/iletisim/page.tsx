@@ -1,7 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
-import { businessInfo } from "@/data/site";
+import { businessInfo, whatsappHref } from "@/data/site";
 import { generateBreadcrumbSchema, generateLocalBusinessSchema, generateStaticPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = generateStaticPageMetadata(
@@ -30,7 +30,7 @@ const contactCards = [
     value: businessInfo.whatsapp,
     description: "Sipariş ve ürün bilgisi için mesaj yazabilirsiniz.",
     icon: "whatsapp",
-    href: `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`,
+    href: whatsappHref,
   },
   {
     title: "E-posta",
@@ -167,6 +167,8 @@ export default function ContactPage() {
                 <a
                   key={item.title}
                   href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="contact-card-reveal group rounded-2xl border border-[#DDB89F]/55 bg-[#FFF8F3] p-6 shadow-[0_16px_45px_rgba(58,42,36,0.06)] transition hover:-translate-y-1 hover:border-[#8F4B38]/70 hover:bg-white"
                   style={{ animationDelay: `${390 + index * 90}ms` }}
                 >

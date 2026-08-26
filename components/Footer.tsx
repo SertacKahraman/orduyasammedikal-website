@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { businessInfo, navItems, services } from "@/data/site";
-
-const whatsappHref = `https://wa.me/${businessInfo.whatsapp.replace(/\D/g, "")}`;
+import { businessInfo, navItems, services, whatsappHref } from "@/data/site";
 
 export default function Footer() {
   return (
@@ -27,6 +25,8 @@ export default function Footer() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
                 href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex justify-center rounded-full bg-[#8F4B38] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#6F3328]"
               >
                 WhatsApp Sipariş
@@ -90,7 +90,12 @@ export default function Footer() {
                 >
                   {businessInfo.phone}
                 </a>
-                <a href={whatsappHref} className="transition hover:text-white">
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
                   WhatsApp ile yaz
                 </a>
                 <a href={`mailto:${businessInfo.email}`} className="transition hover:text-white">
