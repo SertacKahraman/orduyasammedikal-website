@@ -41,7 +41,7 @@ const contactCards = [
   },
   {
     title: "Çalışma Saatleri",
-    value: "08:30 - 16:30",
+    value: "08:30 - 18:30",
     description: "Cumartesi 08:30 - 15:00, Pazar kapalı.",
     icon: "clock",
     href: "#iletisim-formu",

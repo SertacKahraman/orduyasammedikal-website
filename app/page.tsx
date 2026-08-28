@@ -278,23 +278,23 @@ export default function HomePage() {
                   <div className="mt-2 grid gap-x-5 gap-y-2 text-[13px] sm:grid-cols-2">
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Pazartesi</span>
-                      <strong className="font-semibold text-[#2F211C]">08:30 - 16:30</strong>
+                      <strong className="font-semibold text-[#2F211C]">08:30 - 18:30</strong>
                     </div>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Salı</span>
-                      <strong className="font-semibold text-[#2F211C]">08:30 - 16:30</strong>
+                      <strong className="font-semibold text-[#2F211C]">08:30 - 18:30</strong>
                     </div>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Çarşamba</span>
-                      <strong className="font-semibold text-[#2F211C]">08:30 - 16:30</strong>
+                      <strong className="font-semibold text-[#2F211C]">08:30 - 18:30</strong>
                     </div>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Perşembe</span>
-                      <strong className="font-semibold text-[#2F211C]">08:30 - 16:30</strong>
+                      <strong className="font-semibold text-[#2F211C]">08:30 - 18:30</strong>
                     </div>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Cuma</span>
-                      <strong className="font-semibold text-[#2F211C]">08:30 - 16:30</strong>
+                      <strong className="font-semibold text-[#2F211C]">08:30 - 18:30</strong>
                     </div>
                     <div className="flex items-center justify-between gap-3">
                       <span className="text-[#3A2A24]/76">Cumartesi</span>

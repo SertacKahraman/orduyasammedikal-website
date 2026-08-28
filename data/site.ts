@@ -43,7 +43,7 @@ export const businessInfo: BusinessInfo = {
   district: "Altınordu",
   country: "TR",
   postalCode: "52200",
-  workingHours: "Pazartesi - Cuma: 08:30 - 16:30; Cumartesi: 08:30 - 15:00; Pazar: Kapalı",
+  workingHours: "Pazartesi - Cuma: 08:30 - 18:30; Cumartesi: 08:30 - 15:00; Pazar: Kapalı",
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.4537535523014!2d37.89039267551196!3d40.9715439216868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40632140cc9f1ad9%3A0xf415149ec4e2a60!2sordu%20ya%C5%9Fam%20medikal!5e0!3m2!1str!2str!4v1782127882843!5m2!1str!2str",
   logoUrl: `${baseUrl}/assets/brand/yasam-logo.png`,
   baseUrl,
